@@ -25,8 +25,6 @@ PrintArray(array);
 Console.WriteLine();
 ReplaceRowsWithColumnsInArray(array);
 
-//Console.WriteLine($"Разница между максимальным и минимальным элементом в массиве = {GetMaxValue(array) - GetMinValue(array) }");
-
 int[,] FillArray(int arrayRows, int arrayColumns, int minValue, int maxValue)
 {
     int[,] filledArray = new int[arrayRows, arrayColumns];
@@ -56,19 +54,12 @@ void PrintArray(int[,] inputArray)
 
 void ReplaceRowsWithColumnsInArray (int[,] inputArray)
 {
-    if (inputArray.GetLength(0)!=inputArray.GetLength(1))
-    {
-        Console.WriteLine("Замена невозможна, задайте массив с равным числом строк и столбцов.");
-    }
-    else
-    {
-        for (int j = 0; j < inputArray.GetLength(1); j++)
+    for (int j = 0; j < inputArray.GetLength(1); j++)
     {
         for (int i = 0; i < inputArray.GetLength(0); i++)
         {
             Console.Write(inputArray[i, j] + " ");
         }
         Console.WriteLine();
-    }
     }
 }
