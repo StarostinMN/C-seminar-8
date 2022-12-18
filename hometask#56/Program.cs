@@ -29,7 +29,7 @@ int max = Convert.ToInt32(Console.ReadLine());
 int[,] array = FillArray(rows, columns, min, max);
 PrintArray(array);
 
-Console.WriteLine($"Номер строки с наименьшей суммой элементов: {GetMinValueOfTheArray(ComputeSumOfStringsElementsOfArray(array))}");
+Console.WriteLine($"Номер строки с наименьшей суммой элементов: {GetMinValueOfTheArray(ComputeSumOfStringsElementsOfArray(array))+1}"); //Я так понимаю, по условию строки с 1 нумеруются, обратил внимание на это, когда все методы были уже описаны
 
 int[,] FillArray(int ArrayRows, int ArrayColumns, int minValue, int maxValue)
 {
