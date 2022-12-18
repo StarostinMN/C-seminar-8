@@ -53,7 +53,6 @@ int[,] FillArrayInASpiral(int m, int n)
                     count++;
                 }
             }
-
         }
     }
     return array;
